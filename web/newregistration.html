@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register for a Session</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="scripts/Project1.js"></script>
+    </head>
+    <body>
+        <a href="/registration/">Search Registrations</a> 
+        <a href="newregistration.html">Register Attendee</a>
+        <form name="registrationform" id="registrationform" >
+        <fieldset>
+            
+                <label for="first">First Name:</label>
+                <input type="text" name="first" id="first"><br>
+                <label for="last">Last Name:</label>
+                <input type="text" name="last" id="last"><br>
+                <label for="display">Display Name:</label>
+                <input type="text" name="display" id="display"><br>
+                <label>Choose a Session</label>
+                <select id="session" name="session">
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+               
+                </select><br>
+                <input type="button" value="Submit" onClick="Project1.register();">
+            </fieldset>
+        </form>
+        <div id="resultsarea">
+            
+            <p id="version"></p>
+            
+        </div>
+    </body>
+</html>
